@@ -7,14 +7,14 @@ import theme from './themes/main/theme';
 
 function App() {
   return (
-    <>
+    
     <ThemeProvider theme={theme}>
       <Routes>
         <Route path={LoginPath} element={<Login />} />
       </Routes>
 
       </ThemeProvider>
-      </>
+      
 
   );
 }
