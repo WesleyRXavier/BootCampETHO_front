@@ -1,14 +1,23 @@
-import { Grid } from "@mui/material"
-import { grid } from "@mui/system"
-import Button from "../../components/buttons/Button/button.component"
+
+import {Logo, Wrapper} from "./login.styled"
+import Form from "./components/form/form.component"
+import logo from '../../assets/icons/logo.svg';
+import { Container, Grid } from "@mui/material";
 
 export default function Login() {
     return (
-        <Grid container justifyContent={'center'}>
-            <Grid item xs={4}>
-            <Button primary >Entrar</Button>
-            </Grid>
-        </Grid>
+        <>
+        <Container>
+                <Wrapper container justifyContent={'center'}>
+                    <Grid item xs={3} justifyContent ={'center'}>
+                        <Grid container justifyContent={'center'}>
+                            <Logo src={logo} alt={'Netflix Logo'}/>
+                            <Form/>
+                        </Grid>   
+                    </Grid>
+                </Wrapper>
+            </Container>
+        </>
         
     )
 }
